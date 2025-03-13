@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agence de Voyage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Voyages Exotiques</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tours">Tours</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Explorez le Monde avec Nous</h1>
+        <p>Découvrez des destinations de rêve et des expériences inoubliables</p>
+        <a href="#destinations" class="btn btn-primary">Voir les Destinations</a>
+    </header>
+    
+    <!-- Destinations Section -->
+    <section id="destinations" class="container py-5">
+        <h2 class="text-center mb-4">Destinations Populaires</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://www.francetourisme.fr/images/croisiere_seine_paris.webp" class="card-img-top" alt="Paris">
+                    <div class="card-body">
+                        <h5 class="card-title">Paris</h5>
+                        <p class="card-text">Découvrez la ville lumière et sa culture fascinante.</p>
+                        <a href="#" class="btn btn-primary">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card ">
+                    <img src="https://www.costacroisieres.fr/content/dam/costa/costa-magazine/articles-magazine/travel/bali-travel/bali_m.jpg.image.694.390.low.jpg" class="card-img-top" alt="Bali">
+                    <div class="card-body">
+                        <h5 class="card-title">Bali</h5>
+                        <p class="card-text">Plages paradisiaques et aventures inoubliables.</p>
+                        <a href="#" class="btn btn-primary">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAe38oG_76hWy6M2fO9AllzDjYpwKVswwqZQ&s" class="card-img-top" alt="New York">
+                    <div class="card-body">
+                        <h5 class="card-title">New York</h5>
+                        <p class="card-text">Vivez l'effervescence de la Grosse Pomme.</p>
+                        <a href="#" class="btn btn-primary">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Tours Section -->
+    <section id="tours" class="container py-5">
+        <h2 class="text-center mb-4">Nos Tours</h2>
+        <div class="accordion" id="tourAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#tour1">
+                        Circuit en Europe
+                    </button>
+                </h2>
+                <div id="tour1" class="accordion-collapse collapse show" data-bs-parent="#tourAccordion">
+                    <div class="accordion-body">Découvrez les capitales européennes lors d'un voyage inoubliable.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#tour2">
+                        Aventure en Asie
+                    </button>
+                </h2>
+                <div id="tour2" class="accordion-collapse collapse" data-bs-parent="#tourAccordion">
+                    <div class="accordion-body">Plongez dans les traditions et paysages d'Asie.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="container py-5">
+        <h2 class="text-center mb-4">Contactez-nous</h2>
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Nom</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" rows="4"></textarea>
+            </div>
+            <div class="d-flex justify-content-center"><button type="submit" class="btn btn-primary">Envoyer</button></div>
+            
+        </form>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Voyages Exotiques. Tous droits réservés.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
